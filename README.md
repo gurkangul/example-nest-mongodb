@@ -31,7 +31,7 @@ $ docker-compose build && docker-compose up -d
 ## Environment
 
 ```bash
-# docker-compose.yml or tools/environment/environment.ts
+# docker-compose.yml or You can create .env file in project directory
 MONGO_URL: mongodb+srv://ggadmin:ggtest123@cluster0.k7e9w.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 JWT_SECRET: 32dhfnct94q
 HASH_SECRET: 545647546564fdgdfgsfh
