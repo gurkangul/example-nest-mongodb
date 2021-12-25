@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+     prod:
+        container_name: nest_service
+        build: ./
+        environment:
+           MONGO_URL: mongodb+srv://ggadmin:ggtest123@cluster0.k7e9w.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+           JWT_SECRET: 32dhfnct94q
+           HASH_SECRET: 545647546564fdgdfgsfh
+        ports:
+            - 4050:3000
+        restart: unless-stopped
+
